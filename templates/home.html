@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Predictor</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='home.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <form id="predictForm">
+        <label for="sentence">Tokens:</label><br>
+        <input type="text" id="sentence" name="tokens"><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <table id="outputTable">
+        <tr>
+            <th>Tokens</th>
+            <th>Output</th>
+        </tr>
+    </table>
+
+    <script>
+        $("#predictForm").submit(function(event) {
+            event.preventDefault();
+            var sentence = $("#sentence").val();
+            $.ajax({
+                url: '/predict',
+                type: 'post',
+                dataType: 'json',
+                contentType: 'application/json',
+                success: function (data) {
+                    tokens = JSON.parse(data["tokens"]);
+                    prediction = JSON.parse(data["prediction"]);
+
+                    console.log(tokens);
+                    console.log(prediction);
+
+                    // put in table, two rows
+                    output = '<tr>';
+                    // add row name in bold
+                    output += '<td><b>Tokens</b></td>';
+                    // loop over tokens and add each in td
+                    for (var i = 0; i < tokens.length; i++) {
+                        output += '<td>' + tokens[i] + '</td>';
+                    }
+                    // close row
+                    output += '</tr><tr>';
+                    // add row name in bold
+                    output += '<td><b>Output</b></td>';
+                    // add prediction in td
+                    for (var i = 0; i < prediction.length; i++) {
+                        output += '<td>' + prediction[i] + '</td>';
+                    }
+                    // close row
+                    output += '</tr>';
+
+                    // set table as output, no append
+                    $('#outputTable').html(output);
+
+                },
+                data: JSON.stringify({ "input": sentence })
+            });
+        });
+    </script>
+</body>
+</html>
