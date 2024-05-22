@@ -90,10 +90,11 @@
    by
 
    \vspace{\stretch{1}}
-
+\begin{adjustwidth}{-10pt}{-10pt}
+\centering
    {\Large \MakeUppercase{\@author}}\\
    URN: \@urn
-
+\end{adjustwidth}
    \vspace{\stretch{1.5}}
 
    \vspace{\stretch{1}}
@@ -106,20 +107,20 @@
 
    \vspace{\stretch{1}}
 
-   Department of Computer Science\\
+   School of Computer Science and Electronic Engineering\\
    University of Surrey\\
    Guildford GU2 7XH
    \end{center}
 
    \vspace{\stretch{1.5}}
 
-   Supervised by: \@supervisor
+   Module Leader: \@supervisor
    \end{titlepage}
    \newpage
    \pagestyle{empty}
    \vspace*{\stretch{1}}
    % statement of originality
-   I declare that this report is my own work and that the work of
+   We declare that this report is our own work and that the work of
    others is acknowledged and indicated by explicit references.\\[12pt]
    \@author\\
    \@date
