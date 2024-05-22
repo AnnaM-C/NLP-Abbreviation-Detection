@@ -47,7 +47,7 @@
                     // put in table, two rows
                     output = '<tr>';
                     // add row name in bold
-                    output += '<td class="table-primary"><b>Tokens</b></td>';
+                    output += '<td><b class="table-primary">Tokens</b></td>';
                     // loop over tokens and add each in td
                     for (var i = 0; i < tokens.length; i++) {
                         output += '<td>' + tokens[i] + '</td>';
@@ -55,7 +55,7 @@
                     // close row
                     output += '</tr><tr>';
                     // add row name in bold
-                    output += '<td class="table-primary"><b>Output</b></td>';
+                    output += '<td><b class="table-primary">Output</b></td>';
                     // add prediction in td
                     for (var i = 0; i < prediction.length; i++) {
                         output += '<td>' + prediction[i] + '</td>';
@@ -65,21 +65,19 @@
 
                     // set table as output, no append
                     $('#outputTable').html(output);
-                    // $('#outputTable').addClass("table-borderless");
-
                 },
                 error: function(jqXHR, textStatus, errorThrown) {
                     // put in table, two rows
                     output = '<tr>';
                     // add row name in bold
-                    output += '<td><b>Tokens</b></td>';
+                    output += '<td><b class="table-primary">Tokens</b></td>';
                     // loop over tokens and add each in td
                     output += '<td>' + " " + '</td>';
                     
                     // close row
                     output += '</tr><tr>';
                     // add row name in bold
-                    output += '<td><b>Output</b></td>';
+                    output += '<td><b class="table-primary">Output</b></td>';
                     // add prediction in td
                     output += '<td>' + " " + '</td>';
                     // close row

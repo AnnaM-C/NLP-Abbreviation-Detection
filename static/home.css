@@ -7,3 +7,9 @@ td {
     padding-left: 3px;
     padding-right: 3px;
 }
+
+.container-fluid .table-responsive .custom-header {
+    background-color: #EFEFEF;
+    text-align: left;
+    width: 20px;
+}
