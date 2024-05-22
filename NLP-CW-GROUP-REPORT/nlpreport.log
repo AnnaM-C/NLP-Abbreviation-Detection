@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.12.24)  22 MAY 2024 19:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.12.24)  22 MAY 2024 20:19
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -733,8 +733,7 @@ File: Figures/NLPsystemoverview2.png Graphic file (type png)
 Package pdftex.def Info: Figures/NLPsystemoverview2.png  used on input line 78.
 
 (pdftex.def)             Requested size: 407.66833pt x 193.23427pt.
- [8]
-<Figures/NLPsystemoverview1.png, id=207, 1334.9875pt x 102.3825pt>
+<Figures/NLPsystemoverview1.png, id=202, 1334.9875pt x 102.3825pt>
 File: Figures/NLPsystemoverview1.png Graphic file (type png)
 <use Figures/NLPsystemoverview1.png>
 Package pdftex.def Info: Figures/NLPsystemoverview1.png  used on input line 88.
@@ -750,20 +749,21 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [9
+ [8]
+[9
 pdfTeX warning (ext4): destination with the same identifier (name{figure.0.1}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.97 \subsection
-                {Initialisation and handling user input}
+l.99 
+     
 pdfTeX warning (ext4): destination with the same identifier (name{figure.0.2}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.97 \subsection
-                {Initialisation and handling user input} <./Figures/NLPsystemov
-erview2.png> <./Figures/NLPsystemoverview1.png>] [10] [11]
+l.99 
+      <./Figures/NLPsystemoverview2.png> <./Figures/NLPsystemoverview1.png>]
+[10] [11]
 <Figures/spike.png, id=224, 469.755pt x 268.713pt>
 File: Figures/spike.png Graphic file (type png)
 <use Figures/spike.png>
@@ -779,60 +779,59 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.0.3})
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.138 
-       <./Figures/spike.png> <./Figures/ramp.png>] [14]
-<Figures/correct_input_response.png, id=251, 672.5125pt x 48.18pt>
+l.144 
+       <./Figures/spike.png> <./Figures/ramp.png>] [14
+pdfTeX warning (ext4): destination with the same identifier (name{table.0.1}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.168 
+      ]
+<Figures/correct_input_response.png, id=253, 672.5125pt x 48.18pt>
 File: Figures/correct_input_response.png Graphic file (type png)
 <use Figures/correct_input_response.png>
 Package pdftex.def Info: Figures/correct_input_response.png  used on input line
  171.
 (pdftex.def)             Requested size: 452.9679pt x 32.4517pt.
-<Figures/empty_string_response.png, id=252, 671.50874pt x 45.16875pt>
+<Figures/empty_string_response.png, id=254, 671.50874pt x 45.16875pt>
 File: Figures/empty_string_response.png Graphic file (type png)
 <use Figures/empty_string_response.png>
 Package pdftex.def Info: Figures/empty_string_response.png  used on input line 
 172.
 (pdftex.def)             Requested size: 452.9679pt x 30.46896pt.
-<Figures/long_text_response.png, id=253, 666.49pt x 45.16875pt>
+<Figures/long_text_response.png, id=255, 666.49pt x 45.16875pt>
 File: Figures/long_text_response.png Graphic file (type png)
 <use Figures/long_text_response.png>
 Package pdftex.def Info: Figures/long_text_response.png  used on input line 173
 .
 (pdftex.def)             Requested size: 452.9679pt x 30.69847pt.
- [15
-pdfTeX warning (ext4): destination with the same identifier (name{table.0.1}) h
-as been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.177 
-      ]
-<Figures/emptyfrontend.png, id=263, 706.64pt x 221.82875pt>
+<Figures/emptyfrontend.png, id=256, 706.64pt x 221.82875pt>
 File: Figures/emptyfrontend.png Graphic file (type png)
 <use Figures/emptyfrontend.png>
 Package pdftex.def Info: Figures/emptyfrontend.png  used on input line 181.
 (pdftex.def)             Requested size: 271.7835pt x 85.31801pt.
- [16
+ [15
 pdfTeX warning (ext4): destination with the same identifier (name{figure.0.4}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.196     \item \textbf
-                       {Asynchronous Requests:} The efficiency of the servic...
+l.195     \item \textbf
+                       {Cache:} Implementing a caching system will reduce th...
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.0.5}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.196     \item \textbf
-                       {Asynchronous Requests:} The efficiency of the servic...
+l.195     \item \textbf
+                       {Cache:} Implementing a caching system will reduce th...
  <./Figures/correct_input_response.png> <./Figures/empty_string_response.png> <
-./Figures/long_text_response.png> <./Figures/emptyfrontend.png>]
+./Figures/long_text_response.png> <./Figures/emptyfrontend.png>] [16]
 <Figures/Docker.png, id=274, 1443.3925pt x 902.37125pt>
 File: Figures/Docker.png Graphic file (type png)
 <use Figures/Docker.png>
 Package pdftex.def Info: Figures/Docker.png  used on input line 210.
 (pdftex.def)             Requested size: 452.9679pt x 283.17445pt.
- [17]
+
 (C:\Users\ozept\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 )
@@ -842,25 +841,25 @@ File: lstlang1.sty 2023/02/27 1.9 listings language file
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 236.
 
-[18
+[17
 pdfTeX warning (ext4): destination with the same identifier (name{figure.0.6}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.243 \end{lstlisting}
-                       <./Figures/Docker.png>]
+l.240 git 
+          pull origin main <./Figures/Docker.png>] [18]
 <Figures/frontend.png, id=298, 1443.14156pt x 442.65375pt>
 File: Figures/frontend.png Graphic file (type png)
 <use Figures/frontend.png>
 Package pdftex.def Info: Figures/frontend.png  used on input line 262.
 (pdftex.def)             Requested size: 452.9679pt x 138.93683pt.
- [19] (nlpreport.bbl [20
+ (nlpreport.bbl [19
 pdfTeX warning (ext4): destination with the same identifier (name{figure.0.7}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.1 \begin{thebibliography}{xx}
-                                <./Figures/frontend.png>]) [21
+                                <./Figures/frontend.png>]) [20
 
 ] (nlpreport.aux)
  ***********
@@ -871,13 +870,13 @@ Package rerunfilecheck Info: File `nlpreport.out' has not changed.
 (rerunfilecheck)             Checksum: F48DB46D160A0154E884478322A1EFFE;5569.
  ) 
 Here is how much of TeX's memory you used:
- 17797 strings out of 474495
- 291553 string characters out of 5743934
- 1952460 words of memory out of 5000000
- 39626 multiletter control sequences out of 15000+600000
+ 17794 strings out of 474495
+ 291527 string characters out of 5743934
+ 1947460 words of memory out of 5000000
+ 39624 multiletter control sequences out of 15000+600000
  613146 words of font info for 133 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 90i,15n,93p,1263b,1383s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,15n,93p,1195b,2192s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/ozept/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pf
 b><C:/Users/ozept/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pf
 b><C:/Users/ozept/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb
@@ -886,9 +885,9 @@ b><C:/Users/ozept/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb
 C:/Users/ozept/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:
 /Users/ozept/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/U
 sers/ozept/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
-Output written on nlpreport.pdf (22 pages, 943687 bytes).
+Output written on nlpreport.pdf (21 pages, 943100 bytes).
 PDF statistics:
- 381 PDF objects out of 1000 (max. 8388607)
- 75 named destinations out of 1000 (max. 500000)
+ 377 PDF objects out of 1000 (max. 8388607)
+ 74 named destinations out of 1000 (max. 500000)
  34091 words of extra memory for PDF output out of 35830 (max. 10000000)
 
