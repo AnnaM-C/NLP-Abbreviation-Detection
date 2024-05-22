@@ -20,6 +20,10 @@ def predict():
     cur_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     input_sentence = request.json['input']
     prediction_obj = predictor.predict(input_sentence)
+    if prediction_obj == "":
+        with open("monitor_log.csv", mode='a', newline='') as file:
+            writer = csv.writer(file)
+            writer.writerow([input_sentence, "", "", cur_time])
 
     with open("monitor_log.csv", mode='a', newline='') as file:
         writer = csv.writer(file)
