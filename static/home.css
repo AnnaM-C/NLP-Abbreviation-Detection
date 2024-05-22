@@ -7,3 +7,12 @@ td {
     padding-left: 3px;
     padding-right: 3px;
 }
+
+.highlighted-cell {
+    background-color: #cfe2ff;
+    max-width: 102px;
+}
+
+.highlighted-cell b {
+    background: none;
+}

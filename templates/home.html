@@ -20,12 +20,9 @@
     <br>
     <div class="table-responsive">
     <table id="outputTable" class="table">
-    <tbody>
         <tr>
             <th>Tokens</th>
             <th>Output</th>
-        </tr>
-    </tbody>
     </table>
     </div>
     <script>
@@ -47,7 +44,7 @@
                     // put in table, two rows
                     output = '<tr>';
                     // add row name in bold
-                    output += '<td class="table-primary"><b>Tokens</b></td>';
+                    output += '<td class="highlighted-cell"><b>Tokens</b></td>';
                     // loop over tokens and add each in td
                     for (var i = 0; i < tokens.length; i++) {
                         output += '<td>' + tokens[i] + '</td>';
@@ -55,7 +52,7 @@
                     // close row
                     output += '</tr><tr>';
                     // add row name in bold
-                    output += '<td class="table-primary"><b>Output</b></td>';
+                    output += '<td class="highlighted-cell"><b>Output</b></td>';
                     // add prediction in td
                     for (var i = 0; i < prediction.length; i++) {
                         output += '<td>' + prediction[i] + '</td>';
