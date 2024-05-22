@@ -65,23 +65,16 @@
                     // $('#outputTable').addClass("table-borderless");
 
                 },
-                error: function(jqXHR, textStatus, errorThrown) {
+                error: function(jqXHR, status, error) {
+                    console.error("An error occurred: " + status + " " + error);
                     // put in table, two rows
                     output = '<tr>';
                     // add row name in bold
-                    output += '<td><b>Tokens</b></td>';
-                    // loop over tokens and add each in td
-                    output += '<td>' + " " + '</td>';
-                    
-                    // close row
-                    output += '</tr><tr>';
-                    // add row name in bold
-                    output += '<td><b>Output</b></td>';
-                    // add prediction in td
-                    output += '<td>' + " " + '</td>';
+                    output += '<td class="highlighted-cell"><b>Error</b></td>';
+                    // add error message in td
+                    output += '<td>' + jqXHR.responseJSON['error'] + '</td>';
                     // close row
                     output += '</tr>';
-
                     // set table as output, no append
                     $('#outputTable').html(output);
                 },
