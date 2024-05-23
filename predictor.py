@@ -1,11 +1,7 @@
+import json
 import pickle
 import spacy
-import json
-from flask import Flask, request, jsonify
-import logging
 
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
 
 def word2features(sentence: list, i: int):
     word = sentence[i]
@@ -57,30 +53,3 @@ class Predictor:
             "prediction": json.dumps(prediction),
             "tokens": json.dumps(tokens)
         }
-
-app = Flask(__name__)
-predictor = Predictor()
-predictor.load_model()
-
-@app.route('/predict', methods=['POST'])
-def get_prediction():
-    try:
-        data = request.get_json()
-        if not data or 'sentence' not in data:
-            logger.error("No sentence provided in the request data.")
-            return jsonify({"error": "No sentence provided"}), 400
-
-        sentence = data['sentence'].strip()
-        
-        prediction_obj = predictor.predict(sentence)
-        logger.info("Prediction successful")
-        return jsonify(prediction_obj)
-    except ValueError as e:
-        logger.error(f"ValueError: {str(e)}")
-        return jsonify({"error": str(e)}), 422
-    except Exception as e:
-        logger.error(f"An unexpected error occurred: {str(e)}")
-        return jsonify({"error": "An unexpected error occurred."}), 400
-
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8000)

@@ -20,12 +20,9 @@
     <br>
     <div class="table-responsive">
     <table id="outputTable" class="table">
-    <tbody>
         <tr>
             <th>Tokens</th>
             <th>Output</th>
-        </tr>
-    </tbody>
     </table>
     </div>
     <script>
@@ -47,7 +44,7 @@
                     // put in table, two rows
                     output = '<tr>';
                     // add row name in bold
-                    output += '<td><b class="table-primary">Tokens</b></td>';
+                    output += '<td class="highlighted-cell"><b>Tokens</b></td>';
                     // loop over tokens and add each in td
                     for (var i = 0; i < tokens.length; i++) {
                         output += '<td>' + tokens[i] + '</td>';
@@ -55,7 +52,8 @@
                     // close row
                     output += '</tr><tr>';
                     // add row name in bold
-                    output += '<td><b class="table-primary">Output</b></td>';
+
+                    output += '<td class="highlighted-cell"><b>Output</b></td>';
                     // add prediction in td
                     for (var i = 0; i < prediction.length; i++) {
                         output += '<td>' + prediction[i] + '</td>';
@@ -66,23 +64,18 @@
                     // set table as output, no append
                     $('#outputTable').html(output);
                 },
-                error: function(jqXHR, textStatus, errorThrown) {
+                error: function(jqXHR, status, error) {
+                    console.error("An error occurred: " + status + " " + error);
                     // put in table, two rows
                     output = '<tr>';
                     // add row name in bold
-                    output += '<td><b class="table-primary">Tokens</b></td>';
-                    // loop over tokens and add each in td
-                    output += '<td>' + " " + '</td>';
-                    
-                    // close row
-                    output += '</tr><tr>';
-                    // add row name in bold
-                    output += '<td><b class="table-primary">Output</b></td>';
-                    // add prediction in td
-                    output += '<td>' + " " + '</td>';
+
+                    output += '<td class="highlighted-cell"><b>Error</b></td>';
+                    // add error message in td
+                    output += '<td>' + jqXHR.responseJSON['error'] + '</td>';
+
                     // close row
                     output += '</tr>';
-
                     // set table as output, no append
                     $('#outputTable').html(output);
                 },
