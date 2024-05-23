@@ -124,7 +124,7 @@ In this section we critically evaluate the performance of the service. We perfor
 \end{itemize}
 
 \subsection{Performance Evaluation Methods}
-For evaluation, a combination of spike testing and ramp testing using Postman~\cite{postman} was performed to evaluate the performance of the service. The spike testing is performed by sending a low number of requests to the server and then sending a high number of requests all at once at a given point in time over the period of one minute. This shows how the model performs when a small group of users make several requests to the server together. Ramp testing involves increasing the number of requests in the period of one minute to see how the server deals with a continuous load, mimicking how users will interact with the service if it were to be deployed on a large-scale basis. 
+For evaluation, a combination of spike testing and ramp testing using POSTman~\cite{postman} was performed to evaluate the performance of the service. The spike testing is performed by sending a low number of requests to the server and then sending a high number of requests all at once at a given point in time over the period of one minute. This shows how the model performs when a small group of users make several requests to the server together. Ramp testing involves increasing the number of requests in the period of one minute to see how the server deals with a continuous load, mimicking how users will interact with the service if it were to be deployed on a large-scale basis. 
 
 \begin{figure}
     \centering
@@ -134,7 +134,7 @@ For evaluation, a combination of spike testing and ramp testing using Postman~\c
     \label{fig:results}
     \end{figure}
 
-In Figure~\ref{fig:results} the yellow lines represents the number of requests being sent to the server per second with the blue lines representing the average response time. The red lines highlights the error rate seen by the server over this stress test.
+In Figure~\ref{fig:results} the yellow lines represents the number of requests being sent to the server per second with the blue lines representing the average response time. The red lines highlights the error rate seen by the server over this stress test. One limitation with using POSTman for evaluation is that the number of requests is restricted to around 100 virtual users. To see a noticeable difference, we would need to have thousands of virtual users to a noticable difference in terms of error rates. For what is possible, we can see that the architecture is robust for a small number of users. In the future, we could use utilities like celery to handle long running requests and evaluate how the architecture performs and make necessary changes if necessary.
 
 \subsubsection{Spike Testing Analysis}
 Looking at the results of the spike test, we can see that under normal conditions, the service responds at an average rate of just under 20ms showing that the combination of running locally along with the architectural choice of using Flask gives real time responses back to the user upon making a request to the server due to it being lightweight and effective enough for the task, minimising computational resources which can be allocated to handling requests. When the spike occurs, the response rate peaks at around 110ms and then quickly recovers back to its usual rate of under 20ms. This may be due to the user’s device allocating more resources for computation, for example, increasing CPU clock rates, which in turn explains the reduction in response time before reaching peak requests. Additionally, for a total of 1671 requests made, the service does not produce any errors showing its reliability.
@@ -144,7 +144,6 @@ Observing the ramp testing results, we can see that the service struggles more w
 
 \subsection{Endpoint Testing}
 As part of our evaluation of the service we conducted various end-to-end tests to assess how the endpoint performs whilst the application is being used. Each test involved sending a request to the server to retrieve information and comparing the actual response with the expected outcome. These tests focused on the boundary conditions of text and validating the input and output. Assertions were made on HTTP status codes and the structure of the responses evaluated to ensure that the API functioned correctly and could handle various input scenarios reliably. The outcomes of these tests, which validated the functionality and reliability of the API, are shown in Table~\ref{tab:testresults}.
-
 
 \begin{table}
 \centering
@@ -257,7 +256,7 @@ From the findings and observations seen
 %previously
 in \autoref{sec:eval}, it can be concluded that the currently implemented architecture is fit for purpose for a small-scale proof of concept. The combination of using a generalised framework such as Flask allows for simple development of the service. It also allows for flexibility for scaling up in the future but other frameworks such as Django could be considered if the size of the application were to grow. Figure~\ref{fig:interface} shows the web application interface that is presented to the user.
 
-\begin{figure}
+\begin{figure}[H]
     \centering
     \includegraphics[width=1.0\linewidth]{Figures/frontend.png}
     \caption{Application Interface}
