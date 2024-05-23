@@ -16,3 +16,11 @@ td {
 .highlighted-cell b {
     background: none;
 }
+
+/* Will remove this if necessary, but adding here as gh detected conflict */
+
+.container-fluid .table-responsive .custom-header {
+    background-color: #EFEFEF;
+    text-align: left;
+    width: 20px;
+}

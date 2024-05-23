@@ -52,6 +52,7 @@
                     // close row
                     output += '</tr><tr>';
                     // add row name in bold
+
                     output += '<td class="highlighted-cell"><b>Output</b></td>';
                     // add prediction in td
                     for (var i = 0; i < prediction.length; i++) {
@@ -62,17 +63,17 @@
 
                     // set table as output, no append
                     $('#outputTable').html(output);
-                    // $('#outputTable').addClass("table-borderless");
-
                 },
                 error: function(jqXHR, status, error) {
                     console.error("An error occurred: " + status + " " + error);
                     // put in table, two rows
                     output = '<tr>';
                     // add row name in bold
+
                     output += '<td class="highlighted-cell"><b>Error</b></td>';
                     // add error message in td
                     output += '<td>' + jqXHR.responseJSON['error'] + '</td>';
+
                     // close row
                     output += '</tr>';
                     // set table as output, no append

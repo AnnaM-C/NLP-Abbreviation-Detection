@@ -1,0 +1,53 @@
+\begin{thebibliography}{xx}
+
+\harvarditem{AmazonWebServices}{2024}{AWSSageMaker}
+AmazonWebServices  \harvardyearleft 2024\harvardyearright , `Aws sagemaker'.
+\newblock Accessed May, 2024.
+\newline\harvardurl{https://aws.amazon.com/}
+
+\harvarditem{DockerInc.}{2024}{Docker}
+DockerInc.  \harvardyearleft 2024\harvardyearright , `Docker'.
+\newblock Accessed May, 2024.
+\newline\harvardurl{https://www.docker.com/}
+
+\harvarditem{HuggingFace}{2024}{huggingface}
+HuggingFace  \harvardyearleft 2024\harvardyearright , `Huggingface'.
+\newblock Accessed May, 2024.
+\newline\harvardurl{https://huggingface.co/spaces}
+
+\harvarditem{Microsoft}{2024}{azure}
+Microsoft  \harvardyearleft 2024\harvardyearright , `Azure'.
+\newblock Accessed May, 2024.
+\newline\harvardurl{https://azure.microsoft.com/en-gb}
+
+\harvarditem{PalletsProjects}{2024}{flask}
+PalletsProjects  \harvardyearleft 2024\harvardyearright , `Flask api'.
+\newblock Accessed May, 2024.
+\newline\harvardurl{https://flask.palletsprojects.com/en/3.0.x/}
+
+\harvarditem{POSTmanInc.}{2024}{postman}
+POSTmanInc.  \harvardyearleft 2024\harvardyearright , `Postman'.
+\newblock Accessed May, 2024.
+\newline\harvardurl{https://www.postman.com/}
+
+\harvarditem{Pytorch}{2023}{TorchSave}
+Pytorch  \harvardyearleft 2023\harvardyearright , `Torchsave'.
+\newblock Accessed May, 2024.
+\newline\harvardurl{https://pytorch.org/docs/stable/generated/torch.save.html}
+
+\harvarditem{Snowflake}{2024}{streamlit}
+Snowflake  \harvardyearleft 2024\harvardyearright , `Streamlit'.
+\newblock Accessed May, 2024.
+\newline\harvardurl{https://streamlit.io/}
+
+\harvarditem{Tensorflow}{2021}{tensorflow}
+Tensorflow  \harvardyearleft 2021\harvardyearright , `Tensorflow serving,'.
+\newblock Accessed May, 2024.
+\newline\harvardurl{https://www.tensorflow.org/tfx/guide/serving}
+
+\harvarditem{Tiangolo}{2024}{fastapi}
+Tiangolo  \harvardyearleft 2024\harvardyearright , `Fastapi'.
+\newblock Accessed May, 2024.
+\newline\harvardurl{https://fastapi.tiangolo.com/}
+
+\end{thebibliography}
