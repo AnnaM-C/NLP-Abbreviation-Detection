@@ -10,7 +10,7 @@ The experimentation phase involved various NLP techniques and models, with a sig
 - Data preprocessing techniques such as tokenization.
 - Comparing different NLP algorithms (BiLSTM, SVM, RNN, CRF).
 - Evaluating text encoding methods (e.g., TF-IDF, word2vec).
-- Hyperparameter tuning and loss function optimization of LLM's (RoBERTa, BERT, Alberta)
+- Hyperparameter tuning and loss function optimization of LLM's (RoBERTa, BERT, ALBERT)
   
 3.Evaluation: Models were assessed using the F1-score, confusion matrices, and error analysis to determine their effectiveness.
 
